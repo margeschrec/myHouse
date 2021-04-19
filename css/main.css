@@ -1,0 +1,10 @@
+
+
+/* Index- Welcome */
+
+#indexBg {
+    background-image: url('../img/beach_02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
