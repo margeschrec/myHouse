@@ -1,5 +1,4 @@
 
-
 /* Index- Welcome */
 
 #indexBg {
@@ -48,4 +47,44 @@
     height: 7rem;
 }
 
-/*  */
+/* bathroom.php */
+
+#bathroomBg {
+    background-image: -webkit-linear-gradient(rgba(78, 173, 236, 0.2), rgba(48, 177, 117, 0.2)), url('../img/bathroom_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+#indexToilet {
+    position: absolute;
+    bottom: 30;
+    left: 5;
+    width: 30rem;
+    height: 30rem;
+}
+
+#indexTp {
+    position: absolute;
+    bottom: 320;
+    left: 520;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+#indexRug {
+    position: absolute;
+    bottom: 5;
+    left: 520;
+    width: 30rem;
+    height: 10rem;
+}
+
+#indexMirror {
+    position: absolute;
+    bottom: 400;
+    right: 300;
+    width: 20rem;
+    height: 20rem;
+}
