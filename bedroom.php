@@ -23,8 +23,22 @@
         <div class="indexImgs" id="bedroomClock">
             <img src="../img/clock.png" class="img-fluid">
         </div>
+        <!-- diary -->
+        <form action="bedroom.php" id="diaryEntry" class="d-none">
+            <label>Dear Diary...</label></br>
+            <textarea id="diaryPage" name="diaryPage" rows="5" cols="40">...xoxoxo</textarea></br>
+            <input type="submit" value="goodnight" id="newEntry">
+        </form>
+        <div id="textDump">
+            <p></p>
+        </div>
+        <ul>text
+        <li>test</li>
+        </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

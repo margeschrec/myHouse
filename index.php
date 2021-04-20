@@ -10,12 +10,17 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="indexBg">
+    <div class="container-fluid indexbgNight" id="indexBg">
         <div class="indexImgs" id="indexChair">
             <img src="../img/index_chair.png" class="img-fluid">
         </div>
         <div class="indexImgs" id="indexLamp">
             <img src="../img/index_lamp.png" class="img-fluid">
+        </div>
+        <div class="indexImgs" id="indexKnob">
+            <a href="bedroom.php">
+                <img src="../img/door_knob.png" class="img-fluid">
+            </a>
         </div>
         <div class="indexImgs" id="indexTable">
             <img src="../img/index_table.png" class="img-fluid">
