@@ -88,3 +88,69 @@
     width: 20rem;
     height: 20rem;
 }
+
+/* Bedroom */
+
+#bedroomBg {
+    background: linear-gradient(to bottom, rgb(167, 107, 142), rgb(65, 4, 83));
+    height: 100%;
+    position: relative;
+}
+
+#bedroomBag {
+    position: absolute;
+    bottom: 10;
+    right: 30%;
+    width: 40rem;
+    height: 40rem;
+    z-index: 100;
+}
+
+#bedroomDiary {
+    position: absolute;
+    bottom: 20;
+    left: 20;
+    width: 30rem;
+    height: 30rem;
+    z-index: 50;
+}
+
+#bedroomRug {
+    position: relative;
+    right: 10;
+    z-index: 1;
+}
+
+#bedroomClock {
+    position: absolute;
+    bottom: 145;
+    right: 40;
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Kitchen */
+
+#kitchenBg {
+    background-image: -webkit-linear-gradient(rgba(182, 181, 108, 0.2), rgba(95, 79, 35, 0.2)), url('../img/kitchen_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+#kitchenFridge {
+    position: absolute;
+    bottom: 20;
+    right: 30%;
+    width: 40rem;
+    height: 40rem;
+}
+
+#kitchenBlinds {
+    position: absolute;
+    bottom: 345;
+    right: 30;
+    width: 30rem;
+    height: 30rem;
+}
