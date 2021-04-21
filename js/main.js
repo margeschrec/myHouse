@@ -18,8 +18,14 @@ $(document).ready(function () {
         var entry = $.trim($('#diaryPage').val());
         console.log(entry);
         if (entry != '') {
-            alert(entry);
+            // $('#fridgeDump').append('<p>'+entry+'</p');
+            // $("#fridgeDump").load("bedroom.php #diaryPage");
         };
     });
 });
 
+$(document).ready(function () {
+    $('#kitchenFridge').click(function () {
+        $('#fridgeDump').load('bedroom.php #diaryPage');
+    });
+});
