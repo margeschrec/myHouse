@@ -29,7 +29,7 @@
             <img src="../img/clock.png" class="img-fluid">
         </div>
         <!-- diary -->
-        <form action="bedroom.php" id="diary" name="diary" onsubmit="diaryForm()">
+        <form action="bedroom.php" id="diary" name="diary" onsubmit="handleDiary()">
             <label>Dear Diary...</label></br>
             <textarea id="diaryPage" name="diaryPage" rows="5" cols="40"></textarea></br>
             <input type="submit" value="goodnight" id="newEntrySubmit">
