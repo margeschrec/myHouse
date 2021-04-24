@@ -6,11 +6,14 @@ function showDiaryForm() {
 //
 function writeDiaryCookie() {
     console.log('diary page value' , document.diary.diaryPage.value);
-    diaryText = escape(document.diary.diaryPage.value) + ";";
+    diaryText = document.diary.diaryPage.value;
+    diaryName = Date.now();
     console.log('escape diary text' , diaryText);
-    document.cookie = "Dear Diary... " + diaryText;
+    document.cookie = diaryName + "= Dear Diary... " + diaryText;
     console.log('log document.cookie', document.cookie);
 }
+
+
 
 //after diary is clicked //
 function hideDiaryForm() {
@@ -21,7 +24,8 @@ function hideDiaryForm() {
 }
 
 //on submit save cookie, show facemask
-function handleDiary() {
+function handleDiary(e) {
+    event.preventDefault(e);
     writeDiaryCookie();
     hideDiaryForm();
 };
