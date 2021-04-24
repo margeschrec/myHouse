@@ -10,22 +10,27 @@
 </head>
 
 <body>
-    <div class="container-fluid indexbgNight" id="indexBg">
+    <div class="container-fluid indexBgNight" id="indexBg">
         <div class="indexImgs" id="indexChair">
             <img src="../img/index_chair.png" class="img-fluid">
         </div>
         <div class="indexImgs" id="indexLamp">
             <img src="../img/index_lamp.png" class="img-fluid">
         </div>
-        <div class="indexImgs" id="indexKnob">
+        <div class="indexImgs" id="indexKnobNight">
             <a href="bedroom.php">
+                <img src="../img/door_knob.png" class="img-fluid">
+            </a>
+        </div>
+        <div class="indexImgs d-none" id="indexKnobDay">
+            <a href="bathroom.php">
                 <img src="../img/door_knob.png" class="img-fluid">
             </a>
         </div>
         <div class="indexImgs" id="indexTable">
             <img src="../img/index_table.png" class="img-fluid">
         </div>
-        <div class="indexImgs" id="indexClock">
+        <div class="indexImgs" id="indexClock" onclick="toggleDarkMode()">
             <img src="../img/clock.png" class="img-fluid">
         </div>
         <div class="indexImgs" id="indexCalen">
@@ -35,6 +40,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
