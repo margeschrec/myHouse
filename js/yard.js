@@ -5,3 +5,7 @@ function warning() {
 
 
 setTimeout (warning, 3000);
+
+
+//TODO bird appears after five seconds //
+
