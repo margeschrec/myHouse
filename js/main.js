@@ -35,7 +35,17 @@ function getDiaryValues() {
     return diaryValues;
 };
 
+function appendEntries() {
+    let p = document.createElement('p');
+    singleEntry = diaryValues[i];
+    for (var i = 1; i < diaryValues.length; i++) {
+        p.append(singleEntry);
+    };
+}
+
+
 getDiaryValues();
+appendEntries();
 
 console.log(diaryValues);
 
