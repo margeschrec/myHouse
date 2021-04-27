@@ -204,12 +204,54 @@
     height: 40rem;
 }
 
-#kitchenBlinds {
+#Blinds {
     position: absolute;
     bottom: 345;
     right: 30;
     width: 30rem;
     height: 30rem;
+}
+
+#blinds02 {
+    display: none;
+    position: absolute;
+    bottom: 345;
+    right: 30;
+    width: 30rem;
+    height: 30rem;
+}
+
+#fridgeFront {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: red 10px 15px;
+    border: solid 5px rebeccapurple;
+}
+
+#fridgePostIt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#diaryPages  {
+    position: absolute;
+    overflow-y: scroll;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 20rem;
+    height: 20rem;
+}
+
+.fridgeDisplay {
+    display: none;
 }
 
 /* Yard */
