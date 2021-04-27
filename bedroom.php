@@ -17,7 +17,7 @@
         <div class="indexImgs" id="bedroomDiary">
             <img src="../img/bedroom_diary.png" class="img-fluid" onclick="showDiaryForm()">
         </div>
-        <div class="indexImgs" id="bedroomMask" onclick="readDiaryEntry()">
+        <div class="indexImgs" id="bedroomMask">
             <a href="kitchen.php">
                 <img src="../img/bedroom_mask.png" class="img-fluid">
             </a>
