@@ -1,3 +1,46 @@
+//add time indicator to each page
+
+// $(function () {
+//     $("#time").load("time.html");
+
+// });
+
+//set variable for img src for time indicator
+
+    var flowerImage = document.getElementById('#flowerImg');
+    var flowerCycle = ["../img/time_01.png", "../img/time_02.png", "../img/time_03.png", "../img/time_04.png", "../img/time_05.png", "../img/time_06.png",];
+    var flowerIndex = 0;
+
+function cycleFlower() {
+    flowerImage.setAttribute("src",flowerCycle[flowerIndex]);
+    flowerIndex++;
+    if (flowerIndex >= flowerCycle.length) {
+        flowerIndex = 0;
+    }
+}
+
+setInterval(cycleFlower,1000);
+
+// setInterval(function(){
+//     var flowerImage = document.getElementById('#flowerImg')
+//     var flowerCycle = ["../img/time_01.png", "../img/time_02.png", "../img/time_03.png", "../img/time_04.png", "../img/time_05.png", "../img/time_06.png",];
+//     for (x = 0; x < flowerCycle.length; x++) {
+//         currentTime = flowerCycle[x];
+//         flowerImage = currentTime.src;
+//     };
+// }, 6000);
+
+// setInterval(changeFlowerIndicator(), 20000);
+
+// setInterval(function () {
+//     // toggle img src for time check
+//     flowerImage = "../img/time_02.png";
+//     setTimeout(function () {
+//         flowerImage.src = "../img/time_02.png";
+//     }, 6000);
+// }, 6000);
+
+
 
 //Diary Entry Cookie set and get //
 
@@ -15,7 +58,7 @@ function writeDiaryCookie() {
 }
 
 //splits the diary entries into a two element array for each cookie
-const diaryEntries = document.cookie.split(';').map(cookie => cookie.split('='));
+var diaryEntries = document.cookie.split(';').map(cookie => cookie.split('='));
 
 // get the value from each cookie without the name
 function writeDiaryEntryToFridge() {
@@ -35,7 +78,7 @@ function writeDiaryEntryToFridge() {
         //append entries to DOM
         entries.appendChild(newp);
     };
-};
+}
 
 //on submit save cookie, show facemask
 function handleDiary(e) {
@@ -45,7 +88,7 @@ function handleDiary(e) {
     writeDiaryCookie();
     //once form submits, hide diary form
     hideDiaryForm();
-};
+}
 
 writeDiaryEntryToFridge();
 

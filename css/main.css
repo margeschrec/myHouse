@@ -1,4 +1,18 @@
+/* Time Indicator */
+
+#flowerIndicator {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 /* Index- Welcome */
+
+
 
 .indexBgNight {
     background-image: -webkit-linear-gradient(rgba(14, 45, 66, 0.2), rgba(53, 68, 61, 0.2)), url('../img/beach_02.jpg');
@@ -250,7 +264,7 @@
     height: 20rem;
 }
 
-.fridgeDisplay {
+.imgDisplay {
     display: none;
 }
 

@@ -15,5 +15,4 @@ setInterval(function(){
     setTimeout(function(){
         $('#yardBird').css('display', 'none');
     },1000);
-
 }, 6000);
