@@ -1,55 +1,38 @@
-//add time indicator to each page
-
-// $(function () {
-//     $("#time").load("time.html");
-
-// });
-
-//set variable for img src for time indicator
-
-    var flowerImage = document.getElementById('#flowerImg');
-    var flowerCycle = ["../img/time_01.png", "../img/time_02.png", "../img/time_03.png", "../img/time_04.png", "../img/time_05.png", "../img/time_06.png",];
-    var flowerIndex = 0;
+// Time Indicator for each page
 
 function cycleFlower() {
-    flowerImage.setAttribute("src",flowerCycle[flowerIndex]);
-    flowerIndex++;
-    if (flowerIndex >= flowerCycle.length) {
-        flowerIndex = 0;
-    }
+    console.log('calling cycleFlower ');
+    // set FlowerImage to id of image in time html file
+    var flowerImage = document.getElementById('flowerImg');
+    //set all flower images to an array
+    var flowerArray = ["../img/time_01.png", "../img/time_02.png", "../img/time_03.png", "../img/time_04.png", "../img/time_05.png", "../img/time_06.png"];
+    // set the index to start at zero
+    var flowerIndex = 0;
+    //set timed function
+    setInterval(function () {
+        console.log('index ', flowerIndex);
+        console.log("flowerImg ", flowerImage);
+        //set image in document src as an elelment in the flower array
+        flowerImage.setAttribute("src", flowerArray[flowerIndex]);
+        //flower index increments by one
+        flowerIndex++;
+        //if the index gets to be as long as the mength of the img array
+        if (flowerIndex >= flowerArray.length) {
+            //set the array index back the zero
+            flowerIndex = 0;
+        }
+        //change image every ten seconds
+    }, 10000)
 }
 
-setInterval(cycleFlower,1000);
-
-// setInterval(function(){
-//     var flowerImage = document.getElementById('#flowerImg')
-//     var flowerCycle = ["../img/time_01.png", "../img/time_02.png", "../img/time_03.png", "../img/time_04.png", "../img/time_05.png", "../img/time_06.png",];
-//     for (x = 0; x < flowerCycle.length; x++) {
-//         currentTime = flowerCycle[x];
-//         flowerImage = currentTime.src;
-//     };
-// }, 6000);
-
-// setInterval(changeFlowerIndicator(), 20000);
-
-// setInterval(function () {
-//     // toggle img src for time check
-//     flowerImage = "../img/time_02.png";
-//     setTimeout(function () {
-//         flowerImage.src = "../img/time_02.png";
-//     }, 6000);
-// }, 6000);
-
-
-
-//Diary Entry Cookie set and get //
+//Diary Entry Cookie set and get
 
 // write cooie from diary entry form
 function writeDiaryCookie() {
     console.log('diary page value', document.diary.diaryPage.value);
-    //diary text takes the value of the text area //
+    //diary text takes the value of the text area
     diaryText = document.diary.diaryPage.value;
-    //cookie named for the date in seconds when the diary was subited //
+    //cookie named for the date in seconds when the diary was subited
     diaryName = Date.now();
     console.log('diary name', diaryName);
     //cookie saved //
@@ -90,7 +73,4 @@ function handleDiary(e) {
     hideDiaryForm();
 }
 
-writeDiaryEntryToFridge();
-
-
-
+$(document).ready(cycleFlower(), writeDiaryEntryToFridge() );

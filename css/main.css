@@ -127,6 +127,7 @@
 }
 
 #bathroomKnob {
+    display: none;
     position: absolute;
     bottom: 300;
     right: 350;

@@ -7,11 +7,11 @@ function FridgeDoorCloseUp() {
 }
 
 function showPostIt() {
-    $('.fridgeDisplay').css('display', 'block');
+    $('.imgDisplay').css('display', 'block');
 }
 
 function hideFridgeDoor() {
-    $('.fridgeDisplay').css('display', 'none');
+    $('.imgDisplay').css('display', 'none');
     $('#blinds02').css('display', 'block');
     $('#blinds').css('display', 'none');
 }

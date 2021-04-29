@@ -1,4 +1,4 @@
-function mirrorClick() {
+function bathKnobShow() {
     $('#bathroomKnob').css('display', 'block');
 }
 
