@@ -1,5 +1,5 @@
 // Time Indicator for each page
-
+//TODO set in cookie
 function cycleFlower() {
     console.log('calling cycleFlower ');
     // set FlowerImage to id of image in time html file

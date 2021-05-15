@@ -9,10 +9,7 @@
     transform: translate(-50%, -50%);
 }
 
-
 /* Index- Welcome */
-
-
 
 .indexBgNight {
     background-image: -webkit-linear-gradient(rgba(14, 45, 66, 0.2), rgba(53, 68, 61, 0.2)), url('../img/beach_02.jpg');
@@ -152,8 +149,6 @@
     z-index: 100;
 }
 
-
-
 #bedroomDiary {
     position: absolute;
     bottom: 20;
@@ -254,7 +249,7 @@
     transform: translate(-50%, -50%);
 }
 
-#diaryPages  {
+#diaryPages {
     position: absolute;
     overflow-y: scroll;
     top: 50%;
@@ -310,4 +305,14 @@
     left: 700;
     width: 20rem;
     height: 20rem;
+}
+
+#mailContainer {
+    position: absolute;
+    bottom: 400;
+    right: 150;
+    width: 20rem;
+    height: 20rem;
+    background-color: darkturquoise;
+    border: darkviolet solid 10px;
 }
