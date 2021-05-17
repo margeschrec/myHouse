@@ -14,7 +14,30 @@
     height: 650px;
 }
 
+.dreamGrid {
+    background-color: rgba(197, 197, 197, 0.603);
+}
+
+#textContainer {
+    position: fixed;
+    background-color: rgb(255, 20, 20);
+    text-decoration: magenta solid underline;
+    padding: 1.25rem;
+    font-size: 1rem;
+    top: 0;
+}
+
 .vision {
     background-image: url("https://ghostmedia.s3.us-east-2.amazonaws.com/wp-content/uploads/2020/03/DOG-RABID-1.jpg");
     background-size: cover;
+}
+
+#dreamContainer {
+    position: relative;
+    background-image: url("https://thumbs.dreamstime.com/b/supermarket-week-end-shopping-bucharest-romania-december-food-products-aisle-isle-empty-84457819.jpg");
+    background-size: cover;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    margin-top: 5rem;
 }

@@ -4,7 +4,7 @@ const timeLeft = document.querySelector("#time-left");
 let score = document.querySelector("#score");
 
 let result = 0;
-let currentTime = timeLeft.textContent
+let currentTime = timeLeft.textContent;
 
 function randomSquare() {
   square.forEach((classname) => {
@@ -20,15 +20,14 @@ function randomSquare() {
 
 var hitScore = randomSquare();
 
-  square.forEach((id) => {
-    id.addEventListener("mouseup", () => {
-      if (id.id === hitScore) {
-        result++;
-        score.textContent = result;
-      }
-    });
+square.forEach((id) => {
+  id.addEventListener("mouseup", () => {
+    if (id.id === hitScore) {
+      result++;
+      score.textContent = result;
+    }
   });
-
+});
 
 function moveVision() {
   let timerId = null;
@@ -38,13 +37,15 @@ function moveVision() {
 moveVision();
 
 function countDown() {
-    currentTime--
-    timeLeft.textContent = currentTime
+  currentTime--;
+  timeLeft.textContent = currentTime;
 
-    if(currentTime === 0 ) {
-        clearInterval(timerId)
-        alert('Wakey Wakey')
-    }
+  if (currentTime === 0) {
+    let dreams = document.getElementById("dreamContainer");
+    dreams.classList.add("d-none");
+    clearInterval(timerId);
+    alert("Wakey Wakey");
+  }
 }
 
-let timerId = setInterval(countDown, 1000)
+let timerId = setInterval(countDown, 1000);
