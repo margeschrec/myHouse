@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .square {
     width: 13rem;
     height: 13rem;
@@ -22,14 +26,25 @@
     position: fixed;
     background-color: rgb(255, 20, 20);
     text-decoration: magenta solid underline;
+    border: magenta 5px;
+    border-style: ridge;
+    box-shadow: magenta -20px 20px 20px;
     padding: 1.25rem;
     font-size: 1rem;
-    top: 0;
+    top: 2rem;
+    left: 8rem;
 }
 
 .vision {
     background-image: url("https://ghostmedia.s3.us-east-2.amazonaws.com/wp-content/uploads/2020/03/DOG-RABID-1.jpg");
     background-size: cover;
+    width: 13rem;
+    height: 13rem;
+
+}
+
+.up {
+    display: block;
 }
 
 #dreamContainer {
@@ -39,5 +54,5 @@
     width: 95%;
     height: 95%;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
