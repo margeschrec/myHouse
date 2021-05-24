@@ -17,7 +17,7 @@ const phoneInput = document.querySelector('input[name="phone"]');
 const inputs = [nameInput, emailInput, phoneInput];
 
 let isFormValid = false;
-let isValidationOn = false
+let isValidationOn = false;
 
 const resetInput = (elm) => {
   elm.classList.remove("invalid");
@@ -30,7 +30,7 @@ const invalidateElm = (elm) => {
 };
 
 const validateInputs = () => {
-    if (!isValidationOn) return;
+  if (!isValidationOn) return;
   isFormValid = true;
   inputs.forEach(resetInput);
   if (!nameInput.value) {
@@ -41,10 +41,10 @@ const validateInputs = () => {
     isFormValid = false;
     invalidateElm(emailInput);
   }
-    if (!isValidPhone(phoneInput.value)) {
-      isFormValid = false;
-      invalidateElm(phoneInput);
-    }
+  if (!isValidPhone(phoneInput.value)) {
+    isFormValid = false;
+    invalidateElm(phoneInput);
+  }
 };
 
 form.addEventListener("submit", (e) => {
@@ -60,3 +60,14 @@ inputs.forEach((input) => {
     validateInputs();
   });
 });
+
+const border = document.querySelector("#container");
+
+
+    setInterval(function () {
+      border.classList.add("borderFlash");
+    }, 1000);
+
+      setInterval(function () {
+        border.classList.remove("borderFlash");
+      }, 2000);

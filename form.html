@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>For You! Special Offer</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/form.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="header">
-            <h1>Amazing Offer, Act Now</h1>
-            <p>I'm begging you please send me a reply, it's all I'm asking for</p>
+  <head>
+    <title>For You! Special Offer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="header">
+        <h1>Amazing Offer, Act Now</h1>
+        <p>I'm begging you please send me a reply, it's all I'm asking for</p>
+      </div>
+      <form>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input name="name" class="" placeholder="your first and last name" />
+          <div class="error-hint hidden">Your name is required</div>
         </div>
-        <form>
-            <div classname="form-group">
-                <label>Full Name</label>
-                <input name="name" class="" placeholder="your first and last name">
-                <div class="error-hint hidden">Your name is required</div>
-            </div>
-                        <div classname="form-group">
-                <label>Email</label>
-                <input name="email" class="" placeholder="your email address">
-                <div class="error-hint hidden">Your email is invalid</div>
-            </div>
-                        <div classname="form-group">
-                <label>Phone</label>
-                <input name="phone" class="" placeholder="phone number please">
-                <div class="error-hint hidden">Your phone is required</div>
-            </div>
-
-            <hr/>
-            <button>Submit</button>
-        </form>
-        <script src="js/form.js"></script>
-    </body>
+        <div class="form-group">
+          <label>Email</label>
+          <input name="email" class="" placeholder="your email address" />
+          <div class="error-hint hidden">Your email is invalid</div>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input name="phone" class="" placeholder="phone number please" />
+          <div class="error-hint hidden">Your phone is required</div>
+        </div>
+        <hr />
+        <div class="form-group">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/form.js"></script>
+  </body>
 </html>

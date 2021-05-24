@@ -316,3 +316,10 @@
     background-color: darkturquoise;
     border: darkviolet solid 10px;
 }
+
+#mailForm {
+    margin: 1rem;
+    width: 8rem;
+    height: auto;
+    box-shadow: 5px 10px;
+}

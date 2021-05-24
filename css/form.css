@@ -1,15 +1,48 @@
+#container {
+    width: 90%;
+    margin: 5rem auto;
+}
+
+.borderFlash {
+    border: solid red 1rem;
+}
+
 .header {
+    display: flex;
+    flex-direction: column;
     height: 10rem;
     background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-size: 2.75rem;
+    letter-spacing: 10px;
+}
+
+.header p {
+    color: rgb(102, 23, 175);
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .hidden {
     display: none;
 }
 
-
 form {
-    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.form-group {
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .form-group, label {
@@ -19,7 +52,7 @@ form {
 }
 
 .form-group, input {
-    width: 20rem;
+    width: 10rem;
     padding: .5rem;
     margin-bottom: .3rem;
 }
@@ -33,14 +66,16 @@ input.invalid {
 }
 
 button {
+    width: fit-content;
+    height: fit-content;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: .5rem;
     background-color: rgb(133, 226, 195);
     color: rgb(8, 46, 46);
     border-radius: .5rem;
     border-color: rgb(77, 77, 110);
     transition: all .8s;
-    cursor:help;
+    cursor: help;
 }
 
 button:hover {
